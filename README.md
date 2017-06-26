@@ -4,11 +4,11 @@ In this Scala project I'm using a library named ```Kamon``` to get system metric
 
 InfluxDB and Grafana are run in a ```Docker``` container while the main application runs in local mode (using IntelliJ).  The final dashboard looks like this:
 
-![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/KamonMetrics-Memory.png)
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Memory.png)
 
 ## HowTo
 
-### Start InfluxDB and Grafana
+### 1. Start InfluxDB and Grafana
 
 * Create a folder named ```monitor-dev``` and put the file ```docker-compose.yml``` in it
 
@@ -16,7 +16,7 @@ InfluxDB and Grafana are run in a ```Docker``` container while the main applicat
 
 * You can stop the containers with ```docker-compose stop```
 
-### Create the Database in InfluxDB
+### 2. Create the Database in InfluxDB
 
 * Access to the InfluxDB container and create a database named ```mydb```.  To do so, you must:
 ```
@@ -35,7 +35,7 @@ CTRL + P
 CTRL + Q
 ```
 
-### Connect Grafana to InfluxDB
+### 3. Connect Grafana to InfluxDB
 
 * Login to Grafana's UI
 ```
@@ -46,16 +46,25 @@ password: admin
 
 * Create a new Datasource
 
-![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/KamonMetrics-Datasource.png)
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Datasource.png)
 
 * Connect it to the InfluxDB container using port 8086
 
 ![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/KamonMetrics-DatasourceInflux.png)
 
 
-## Application
+### 4. Import Grafana's Dashboard
 
-### Main
+* Go to Dashboards-home and import the file ```KamonMetrics-Dashboard.json```
+
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Dashboard.png)
+
+
+### That's it
+
+  ## Application
+
+  ### Main
 
 It's built in Scala 2.11.8. Basically it executes until you press ENTER in the console and while active it sends system metrics to InfluxDB to a data base called "mydb"
 
@@ -135,4 +144,4 @@ networks:
 
 * Kamon System Metrics Module: http://kamon.io/documentation/kamon-system-metrics/0.6.6/overview/
 
-* Grafana additional plugins: https://grafana.com/plugins
+* Grafana additional plugins: https://grafana.com/plugins	
