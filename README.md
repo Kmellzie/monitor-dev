@@ -8,9 +8,17 @@ InfluxDB and Grafana are run in a ```Docker``` container while the main applicat
 
 ## HowTo
 
-1. Create a folder named ```monitor-dev``` and put the file ```docker-compose.yml``` in it
-2. Open the console there and start the docker container with the command ```docker-compose up```
-3. Access to the InfluxDB container to create a database named ```mydb```.  To do so, you must:
+### Start InfluxDB and Grafana
+
+* Create a folder named ```monitor-dev``` and put the file ```docker-compose.yml``` in it
+
+* Open the console there and start the docker containers with the command ```docker-compose up```
+
+* You can stop the containers with ```docker-compose stop```
+
+### Create the Database in InfluxDB
+
+* Access to the InfluxDB container and create a database named ```mydb```.  To do so, you must:
 ```
 // Get access to the container
 docker exec -it monitordev_influxdb_1 /bin/bash
@@ -27,15 +35,22 @@ CTRL + P
 CTRL + Q
 ```
 
-4. Login to Grafana0s UI
+### Connect Grafana to InfluxDB
+
+* Login to Grafana's UI
 ```
 http://localhost:3000/login
 user: admin
 password: admin
 ```
 
-5. Create a Datasource
+* Create a new Datasource
 
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/KamonMetrics-Datasource.png)
+
+* Connect it to the InfluxDB container using port 8086
+
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/KamonMetrics-DatasourceInflux.png)
 
 
 ## Application
