@@ -157,4 +157,4 @@ networks:
 
 * Kamon System Metrics Module: http://kamon.io/documentation/kamon-system-metrics/0.6.6/overview/
 
-* Grafana additional plugins: https://grafana.com/plugins	
+* Grafana additional plugins: https://grafana.com/plugins
