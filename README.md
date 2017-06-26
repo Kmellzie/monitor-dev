@@ -1,8 +1,8 @@
 # Monitor-Dev
 
-I find Grafana very useful to visualize metrics stored in ```InfluxDB``` or ```Elasticsearch```. I recently found a library called ```Kamon``` that lets you track some metrics of the machine where you're executing your applications and lets you create my own metrics.  I hope this testdrive gives you good ideas for your applications too.
+I find Grafana very useful to visualize metrics stored in ```InfluxDB``` or ```Elasticsearch.``` I recently found a library called ```Kamon``` that lets you track some metrics of the machine where you're executing your applications and lets you create my own metrics.  I hope this testdrive gives you good ideas for your applications too.
 
-In this Scala project I'm using a library named ```Kamon``` to get system metrics when my application is running.  These metrics are sent and stored in ```InfluxDB``` and visualized using ```Grafana```.
+In this Scala project I'm using a library named ```Kamon``` to get system metrics.  These metrics are sent and stored in ```InfluxDB``` and visualized using ```Grafana```.
 
 InfluxDB and Grafana are run in a ```Docker``` container while the main application runs in local mode (using IntelliJ).  The final dashboard looks like this:
 
