@@ -6,6 +6,14 @@ InfluxDB and Grafana are run in a ```Docker``` container while the main applicat
 
 ![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Memory.png)
 
+In this project you will find the following artifacts in the **resources** folder:
+
+* docker-compose.yml
+* KamonMetrics-Dashboard.json
+* .png Images
+
+
+
 ## HowTo
 
 ### 1. Start InfluxDB and Grafana
@@ -59,13 +67,17 @@ password: admin
 
 ![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Dashboard.png)
 
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-DashboardImport.png)
+
+Now you can explore the Histograms I've created and you can create yours based on all the metrics sent by Kamon.
+
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Graph.png)
 
 
-### That's it
 
-  ## Application
+## Application
 
-  ### Main
+### Main
 
 It's built in Scala 2.11.8. Basically it executes until you press ENTER in the console and while active it sends system metrics to InfluxDB to a data base called "mydb"
 
