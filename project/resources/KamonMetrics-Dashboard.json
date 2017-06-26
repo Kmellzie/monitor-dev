@@ -136,7 +136,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Memory",
+          "title": "USED",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -262,7 +262,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Memory",
+          "title": "CACHE AND BUFFER",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -341,7 +341,7 @@
           "steppedLine": false,
           "targets": [
             {
-              "alias": "Memory Free",
+              "alias": "FREE",
               "dsType": "influxdb",
               "groupBy": [
                 {
@@ -582,7 +582,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Memory",
+          "title": "SWAP",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -1202,5 +1202,5 @@
   },
   "timezone": "browser",
   "title": "KamonMetrics",
-  "version": 4
+  "version": 3
 }

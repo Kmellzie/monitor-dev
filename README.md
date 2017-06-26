@@ -50,7 +50,7 @@ password: admin
 
 * Connect it to the InfluxDB container using port 8086
 
-![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/KamonMetrics-DatasourceInflux.png)
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-DatasourceInflux.png)
 
 
 ### 4. Import Grafana's Dashboard
@@ -58,6 +58,7 @@ password: admin
 * Go to Dashboards-home and import the file ```KamonMetrics-Dashboard.json```
 
 ![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Dashboard.png)
+
 
 
 ### That's it
