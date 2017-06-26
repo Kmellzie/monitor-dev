@@ -74,10 +74,17 @@ Now you can explore the Histograms I've created and you can create yours based o
 ![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Graph.png)
 
 
+### 5. Run the Application
 
-## Application
+I'm using IntelliJ to do so. After it starts running you can also see the metrics printed in the console.
 
-### Main
+![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Console.png)
+
+
+
+## Details
+
+### MainApp
 
 It's built in Scala 2.11.8. Basically it runs until you press ENTER in the console and while active it sends system metrics to InfluxDB to a data base called "mydb"
 
@@ -119,7 +126,7 @@ kamon {
 }
 ```
 
-## Docker Compose
+### Docker Compose
 
 I'm using docker-compose to start Grafana and InfluxDB's containers. Here's the content of the file ```docker-compose.yml```.
 
@@ -153,11 +160,11 @@ networks:
 ```
 
 
-## References:
+## References
 
 * Kamon System Metrics Module: http://kamon.io/documentation/kamon-system-metrics/0.6.6/overview/
 
 * Grafana additional plugins: https://grafana.com/plugins
 
-	
-Thank you for reading.
+
+*Thank you*
