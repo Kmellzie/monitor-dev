@@ -6,7 +6,7 @@ InfluxDB and Grafana are run in a ```Docker``` container while the main applicat
 
 ![alt text](https://raw.githubusercontent.com/Kmellzie/monitor-dev/master/project/resources/imgs/KamonMetrics-Memory.png)
 
-In this project you will find the following artifacts in the **resources** folder:
+In this project you will find the following artifacts in the **project/resources** folder:
 
 * docker-compose.yml
 * KamonMetrics-Dashboard.json
@@ -22,7 +22,7 @@ In this project you will find the following artifacts in the **resources** folde
 
 * Open the console there and start the docker containers with the command ```docker-compose up```
 
-* You can stop the containers with ```docker-compose stop```
+* (You can stop the containers with ```docker-compose stop```)
 
 ### 2. Create the Database in InfluxDB
 
@@ -157,4 +157,4 @@ networks:
 
 * Kamon System Metrics Module: http://kamon.io/documentation/kamon-system-metrics/0.6.6/overview/
 
-* Grafana additional plugins: https://grafana.com/plugins
+* Grafana additional plugins: https://grafana.com/plugins	
