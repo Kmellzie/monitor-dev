@@ -45,6 +45,8 @@ CTRL + P
 CTRL + Q
 ```
 
+If your getting an error with the ```docker exec..``` command you can check the Container_ID assigned for the influxDb container with the command: ```docker ps``` and use that Container_ID instead of ```monitordev_influxdb_1```
+
 ### 3. Connect Grafana to InfluxDB
 
 * Login to Grafana's UI
